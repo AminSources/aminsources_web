@@ -1,6 +1,7 @@
 import 'package:aminsources_web/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class OutlineNeonButton extends StatelessWidget {
   final double? width;
@@ -37,12 +38,12 @@ class OutlineNeonButton extends StatelessWidget {
       child: InkWell(
         onTap: onPressed,
         child: Center(
-          child: Image.asset(
+          child: SvgPicture.asset(
             iconPath,
-            width: (width ?? 30.w) - 20.w,
-            height: (height ?? 30.h) - 20.h,
+            width: (width ?? 50.w) - 25.w,
+            height: (height ?? 50.h) - 25.h,
             fit: BoxFit.cover,
-            color: whiteColor,
+            colorFilter: ColorFilter.mode(cyanColor, BlendMode.srcIn),
           ),
         ),
       ),

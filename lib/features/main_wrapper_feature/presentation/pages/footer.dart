@@ -1,9 +1,13 @@
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/constants/strings.dart';
+import 'package:aminsources_web/core/extensions/scroll_extension.dart';
+import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/outline_neon_button.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
 import 'package:aminsources_web/features/main_wrapper_feature/presentation/widgets/logo_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Footer extends StatelessWidget {
   const new({super.key});
@@ -35,16 +39,19 @@ class Footer extends StatelessWidget {
             spacing: 10.w,
             runSpacing: 10.h,
             children: List.generate(
-              3,
+              4,
               (index) => OutlineNeonButton(
                 width: 40.w,
                 height: 40.h,
                 iconPath: [
-                  "lib/assets/images/github.png",
-                  "lib/assets/images/instagram.png",
-                  "lib/assets/images/telegram.png",
+                  "lib/assets/images/mail.svg",
+                  "lib/assets/images/telegram.svg",
+                  "lib/assets/images/instagram.svg",
+                  "lib/assets/images/github.svg",
                 ][index],
-                onPressed: () {},
+                onPressed: () {
+                  launchUrl(Uri.parse(socialUrl[index]));
+                },
               ),
             ),
           ),
@@ -65,7 +72,16 @@ class Footer extends StatelessWidget {
             children: List.generate(
               4,
               (index) => TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.scrollToSection(
+                    [
+                      NavigationKeys.homeKey,
+                      NavigationKeys.aboutKey,
+                      NavigationKeys.worksKey,
+                      NavigationKeys.contactKey,
+                    ][index],
+                  );
+                },
                 child: txt(
                   ["Home", "About me", "Works", "Contact me"][index],
                   color: cyanColor,

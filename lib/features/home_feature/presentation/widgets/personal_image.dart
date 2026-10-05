@@ -32,7 +32,7 @@ class PersonalImage extends StatelessWidget {
               border: Border.all(color: borderColor),
               borderRadius: BorderRadius.circular(10.r),
               image: const DecorationImage(
-                image: AssetImage("lib/assets/images/amin.jpg"),
+                image: AssetImage("lib/assets/images/amin.webp"),
                 fit: BoxFit.cover,
               ),
             ),

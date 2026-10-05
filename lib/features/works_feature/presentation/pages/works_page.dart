@@ -1,4 +1,5 @@
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/label_widget.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
@@ -16,7 +17,7 @@ class WorksPage extends StatelessWidget {
       isScrollable: true,
       child: Column(
         children: [
-          SizedBox(height: 40.h),
+          SizedBox(height: 40.h, key: NavigationKeys.worksKey),
 
           //* label
           LabelWidget(label: "Works"),

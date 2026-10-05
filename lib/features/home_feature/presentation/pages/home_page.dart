@@ -1,4 +1,6 @@
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/extensions/scroll_extension.dart';
+import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/button_widget.dart';
 import 'package:aminsources_web/core/widgets/outline_neon_button.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
@@ -8,6 +10,7 @@ import 'package:aminsources_web/features/home_feature/presentation/widgets/home_
 import 'package:aminsources_web/features/home_feature/presentation/widgets/home_title_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   const new({super.key});
@@ -18,7 +21,7 @@ class HomePage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: .start,
         children: [
-          SizedBox(height: 20.h),
+          SizedBox(height: 20.h, key: NavigationKeys.homeKey),
 
           //* personal image
           PersonalImage(),
@@ -48,7 +51,10 @@ class HomePage extends StatelessWidget {
               ButtonWidget(
                 width: 150.w,
                 height: 50.h,
-                onPressed: () {},
+                onPressed: () {
+                  //? scroll page
+                  context.scrollToSection(NavigationKeys.worksKey);
+                },
                 child: Row(
                   mainAxisAlignment: .center,
                   children: [
@@ -71,15 +77,20 @@ class HomePage extends StatelessWidget {
                       side: BorderSide(color: borderColor),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    //? scroll page
+                    context.scrollToSection(NavigationKeys.contactKey);
+                  },
                   child: txt("Contact me"),
                 ),
               ),
 
               //* github button
               OutlineNeonButton(
-                iconPath: "lib/assets/images/github.png",
-                onPressed: () {},
+                iconPath: "lib/assets/images/github.svg",
+                onPressed: () {
+                  launchUrl(Uri.parse("https://github.com/aminsources"));
+                },
               ),
             ],
           ),

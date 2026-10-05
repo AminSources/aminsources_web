@@ -16,7 +16,7 @@ class AppBarWidget extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(15.r),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Container(
             width: double.infinity,
             height: 50.h,
@@ -33,7 +33,13 @@ class AppBarWidget extends StatelessWidget {
                 LogoWidget(),
 
                 //* menu icon
-                InkWell(onTap: () {}, child: Icon(LucideIcons.menu)),
+                InkWell(
+                  onTap: () {
+                    //? open drawer
+                    Scaffold.of(context).openDrawer();
+                  },
+                  child: Icon(LucideIcons.menu),
+                ),
               ],
             ),
           ),

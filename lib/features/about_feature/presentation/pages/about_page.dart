@@ -1,4 +1,5 @@
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/label_widget.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
@@ -15,6 +16,8 @@ class AboutPage extends StatelessWidget {
       isScrollable: true,
       child: Column(
         children: [
+          SizedBox(height: 20.h, key: NavigationKeys.aboutKey),
+
           //* label
           LabelWidget(label: "About me"),
           SizedBox(height: 20.h),
@@ -55,7 +58,7 @@ class AboutPage extends StatelessWidget {
 
           //* image
           Image.asset(
-            "lib/assets/images/about_object.png",
+            "lib/assets/images/about_object.webp",
             width: 200.w,
             height: 200.h,
             fit: BoxFit.cover,

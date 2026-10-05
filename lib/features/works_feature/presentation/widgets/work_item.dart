@@ -1,4 +1,5 @@
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/widgets/outline_neon_button.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -96,23 +97,10 @@ class WorkItem extends StatelessWidget {
                       ),
                     ),
 
-                    //* show more button
-                    Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 5.w,
-                        vertical: 5.h,
-                      ),
-                      decoration: BoxDecoration(
-                        color: cyanColor.withValues(alpha: 0.3),
-                        borderRadius: BorderRadius.circular(10.r),
-                        border: Border.all(color: cyanColor),
-                      ),
-                      child: Image.asset(
-                        "lib/assets/images/github.png",
-                        width: 30.w,
-                        height: 30.h,
-                        color: cyanColor,
-                      ),
+                    //* show github button
+                    OutlineNeonButton(
+                      iconPath: "lib/assets/images/github.svg",
+                      onPressed: () {},
                     ),
                   ],
                 ),
