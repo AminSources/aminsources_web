@@ -1,8 +1,8 @@
 import 'package:aminsources_web/core/constants/colors.dart';
 import 'package:aminsources_web/core/widgets/button_widget.dart';
+import 'package:aminsources_web/core/widgets/outline_neon_button.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
-import 'package:aminsources_web/features/home_feature/presentation/widgets/home_github_button.dart';
 import 'package:aminsources_web/features/home_feature/presentation/widgets/personal_image.dart';
 import 'package:aminsources_web/features/home_feature/presentation/widgets/home_details_section.dart';
 import 'package:aminsources_web/features/home_feature/presentation/widgets/home_title_section.dart';
@@ -77,7 +77,10 @@ class HomePage extends StatelessWidget {
               ),
 
               //* github button
-              HomeGithubButton(),
+              OutlineNeonButton(
+                iconPath: "lib/assets/images/github.png",
+                onPressed: () {},
+              ),
             ],
           ),
           SizedBox(height: 20.h),

@@ -33,6 +33,7 @@ dependencies:
   equatable: ^3.0.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.1.1
   flutter_lucide: ^1.52.0
   flutter_screenutil: ^5.9.3
 

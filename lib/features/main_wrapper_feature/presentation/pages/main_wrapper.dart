@@ -2,8 +2,11 @@ import 'dart:ui';
 
 import 'package:aminsources_web/core/constants/colors.dart';
 import 'package:aminsources_web/features/about_feature/presentation/pages/about_page.dart';
+import 'package:aminsources_web/features/contact_feature/presentation/pages/contact_page.dart';
 import 'package:aminsources_web/features/home_feature/presentation/pages/home_page.dart';
+import 'package:aminsources_web/features/main_wrapper_feature/presentation/pages/footer.dart';
 import 'package:aminsources_web/features/main_wrapper_feature/presentation/widgets/app_bar_widget.dart';
+import 'package:aminsources_web/features/works_feature/presentation/pages/works_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -45,16 +48,17 @@ class MainWrapper extends StatelessWidget {
             //* widgets layer
             Positioned.fill(
               child: Padding(
-                padding: EdgeInsets.only(top: 85.h), // حفظ فاصله از اپ‌بار
+                padding: EdgeInsets.only(top: 85.h),
                 child: SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(), // بهبود تجربه کاربری
+                  physics: const BouncingScrollPhysics(),
                   child: Column(
                     children: [
                       HomePage(),
                       AboutPage(),
-                      SizedBox(
-                        height: 50.h,
-                      ), // فضای خالی در انتها برای دیده شدن کامل آخرین آیتم
+                      WorksPage(),
+                      ContactPage(),
+                      SizedBox(height: 20.h),
+                      Footer(),
                     ],
                   ),
                 ),

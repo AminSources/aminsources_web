@@ -4,8 +4,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class PageWidget extends StatelessWidget {
   final Widget child;
   final double? height;
+  final bool? isScrollable;
 
-  const PageWidget({super.key, required this.child, this.height});
+  const PageWidget({
+    super.key,
+    required this.child,
+    this.height,
+    this.isScrollable,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +19,9 @@ class PageWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: SizedBox(
         width: double.infinity,
-        height: height ?? MediaQuery.sizeOf(context).height * 0.9,
+        height: isScrollable == true
+            ? null
+            : height ?? MediaQuery.sizeOf(context).height * 0.9,
         child: child,
       ),
     );

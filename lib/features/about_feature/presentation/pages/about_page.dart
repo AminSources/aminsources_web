@@ -1,4 +1,5 @@
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/widgets/label_widget.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
 import 'package:flutter/material.dart';
@@ -11,35 +12,11 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageWidget(
-      height: MediaQuery.sizeOf(context).height * 1.1,
+      isScrollable: true,
       child: Column(
         children: [
           //* label
-          Container(
-            width: 100.w,
-            height: 35.h,
-            decoration: BoxDecoration(
-              color: cyanColor.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(25.r),
-              border: Border.all(color: borderColor),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(
-                  Icons.circle,
-                  size: 8.sp,
-                  color: cyanColor,
-                  shadows: [
-                    Shadow(color: cyanColor, blurRadius: 20.r),
-                    Shadow(color: cyanColor, blurRadius: 20.r),
-                  ],
-                ),
-
-                txt("About me", size: 12.sp, color: cyanColor),
-              ],
-            ),
-          ),
+          LabelWidget(label: "About me"),
           SizedBox(height: 20.h),
 
           //* title
