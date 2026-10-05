@@ -86,6 +86,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.0"
+  flutter_lucide:
+    dependency: "direct main"
+    description:
+      name: flutter_lucide
+      sha256: "2a0501c47ea7b4c6c72a2a00fb8d6e82cb20e7d422216c6e8e52e45929e87d27"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.52.0"
   flutter_screenutil:
     dependency: "direct main"
     description:

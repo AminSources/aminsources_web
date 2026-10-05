@@ -1,3 +1,5 @@
+import 'package:aminsources_web/core/theme/app_theme.dart';
+import 'package:aminsources_web/features/main_wrapper_feature/presentation/pages/main_wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,11 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(360, 690),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(title: 'Aminsources', home: SizedBox());
+        return MaterialApp(
+          title: 'Aminsources',
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.theme,
+          home: MainWrapper(),
+        );
       },
     );
   }
