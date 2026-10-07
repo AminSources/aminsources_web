@@ -1,4 +1,4 @@
-import 'package:aminsources_web/features/works_feature/presentation/widgets/work_item.dart';
+import 'package:aminsources_web/features/works/presentation/widgets/work_item.dart';
 import 'package:flutter/material.dart';
 
 class WorksList extends StatelessWidget {

@@ -1,13 +1,13 @@
 import 'dart:ui';
 
 import 'package:aminsources_web/core/constants/colors.dart';
-import 'package:aminsources_web/features/about_feature/presentation/pages/about_page.dart';
-import 'package:aminsources_web/features/contact_feature/presentation/pages/contact_page.dart';
-import 'package:aminsources_web/features/home_feature/presentation/pages/home_page.dart';
-import 'package:aminsources_web/features/main_wrapper_feature/presentation/pages/footer.dart';
-import 'package:aminsources_web/features/main_wrapper_feature/presentation/widgets/app_bar_widget.dart';
-import 'package:aminsources_web/features/main_wrapper_feature/presentation/widgets/drawer_widget.dart';
-import 'package:aminsources_web/features/works_feature/presentation/pages/works_page.dart';
+import 'package:aminsources_web/features/about/presentation/pages/about_page.dart';
+import 'package:aminsources_web/features/contact/presentation/pages/contact_page.dart';
+import 'package:aminsources_web/features/home/presentation/pages/home_page.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/pages/footer.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/app_bar_widget.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/drawer_widget.dart';
+import 'package:aminsources_web/features/works/presentation/pages/works_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

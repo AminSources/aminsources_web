@@ -1,0 +1,24 @@
+{
+    "portfolio" : [
+        {
+            "name" : "Hamsafar App",
+            "description" : "A trip coordination and management application for small group trips",
+            "category" : "mobile",
+            "used_technologies" : [
+                "Mobile", "Flutter", "Dart", "Supabase"
+            ],
+            "github_url" : "https://github.com/AminSources/hamsafar",
+            "image_url" : "https://private-user-images.githubusercontent.com/126703069/667599951-b34738e5-a190-4198-abb5-cc5e2c997199.webp?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTEzNzA0OTcsIm5iZiI6MTc5MTM3MDE5NywicGF0aCI6Ii8xMjY3MDMwNjkvNjY3NTk5OTUxLWIzNDczOGU1LWExOTAtNDE5OC1hYmI1LWNjNWUyYzk5NzE5OS53ZWJwP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTAwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjEwMDdUMTA0OTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzYxZDNhMGUwNTM3YTVjZDU3NDZlY2Q1MzNhMDJlMGEyOWRlZTUxZmRkOTI2ZWFlYjNhNWFmNWVlMWFjNDk1NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGd2VicCJ9.fz8XPGZpS8vhcycaZjx7tN7EMowk0wnBjAmS4fVtL84"
+        },
+        {
+            "name" : "Portfolio Web",
+            "description" : "An responsive personal web with neon-blur effects and modern UI/UX design",
+            "category" : "web",
+            "used_technologies" : [
+                "Web", "Flutter", "Dart"
+            ],
+            "github_url" : "https://github.com/AminSources/aminsources_web",
+            "image_url" : "https://private-user-images.githubusercontent.com/126703069/667657371-a0919281-2a31-4f8f-900c-bac5157ae77d.webp?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTEzNzU0MTMsIm5iZiI6MTc5MTM3NTExMywicGF0aCI6Ii8xMjY3MDMwNjkvNjY3NjU3MzcxLWEwOTE5MjgxLTJhMzEtNGY4Zi05MDBjLWJhYzUxNTdhZTc3ZC53ZWJwP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTAwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjEwMDdUMTIxMTUzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzhjZGU0OWQxYmRlZWJhNjhjODdhNGE2MzE0NmZiNGEzZDI5MjAwM2ZkYTA1Y2RhNzhmOTY1MWQ3YWEyZWNlNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGd2VicCJ9.j37sN2eVmsMR9AIl8I95Zlqk8DVP_CiaIl_cOedYj7U"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 import 'package:aminsources_web/core/theme/app_theme.dart';
-import 'package:aminsources_web/features/main_wrapper_feature/presentation/pages/main_wrapper.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/pages/main_wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

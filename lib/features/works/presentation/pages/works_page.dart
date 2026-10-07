@@ -3,8 +3,8 @@ import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/label_widget.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
-import 'package:aminsources_web/features/works_feature/presentation/widgets/works_categories_widget.dart';
-import 'package:aminsources_web/features/works_feature/presentation/widgets/works_list.dart';
+import 'package:aminsources_web/features/works/presentation/widgets/works_categories_widget.dart';
+import 'package:aminsources_web/features/works/presentation/widgets/works_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

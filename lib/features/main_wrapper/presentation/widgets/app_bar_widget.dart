@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:aminsources_web/core/constants/colors.dart';
-import 'package:aminsources_web/features/main_wrapper_feature/presentation/widgets/logo_widget.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/logo_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

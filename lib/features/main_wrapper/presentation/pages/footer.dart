@@ -4,7 +4,7 @@ import 'package:aminsources_web/core/extensions/scroll_extension.dart';
 import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/outline_neon_button.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
-import 'package:aminsources_web/features/main_wrapper_feature/presentation/widgets/logo_widget.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/logo_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
