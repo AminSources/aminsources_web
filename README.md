@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+<img width="600" height="300" alt="aminsources_web_title_picture" src="https://github.com/user-attachments/assets/a0919281-2a31-4f8f-900c-bac5157ae77d" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
