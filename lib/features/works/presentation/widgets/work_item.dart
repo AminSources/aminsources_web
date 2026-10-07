@@ -3,6 +3,7 @@ import 'package:aminsources_web/core/widgets/outline_neon_button.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class WorkItem extends StatelessWidget {
   final String workName;
@@ -42,10 +43,27 @@ class WorkItem extends StatelessWidget {
         crossAxisAlignment: .start,
         children: [
           //* image placeholder
-          SizedBox(width: double.infinity, height: 150.h),
+          Container(
+            width: double.infinity,
+            height: 150.h,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(imagePath),
+                fit: BoxFit.cover,
+              ),
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(15.r),
+                topRight: Radius.circular(15.r),
+              ),
+            ),
+          ),
 
           //* divider
-          Divider(),
+          Container(
+            width: double.infinity,
+            height: 1.h,
+            color: const Color(0x67666666),
+          ),
 
           //* work details
           Padding(
@@ -100,7 +118,10 @@ class WorkItem extends StatelessWidget {
                     //* show github button
                     OutlineNeonButton(
                       iconPath: "lib/assets/images/github.svg",
-                      onPressed: () {},
+                      onPressed: () {
+                        //? launch github url
+                        launchUrl(Uri.parse(githubUrl));
+                      },
                     ),
                   ],
                 ),

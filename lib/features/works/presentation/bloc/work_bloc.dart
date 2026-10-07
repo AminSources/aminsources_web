@@ -25,7 +25,7 @@ class WorkBloc extends Bloc<WorkEvent, WorkState> {
     final dataState = await getWorksUsecase(NoParams());
 
     if (dataState.data != null) {
-      emit(WorkLoaded(data: dataState.data!));
+      emit(WorkSuccess(data: dataState.data!));
     } else {
       emit(WorkError(message: dataState.message!));
     }

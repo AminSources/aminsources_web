@@ -3,9 +3,11 @@ import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/label_widget.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
+import 'package:aminsources_web/features/works/presentation/cubit/works_categories_cubit.dart';
 import 'package:aminsources_web/features/works/presentation/widgets/works_categories_widget.dart';
 import 'package:aminsources_web/features/works/presentation/widgets/works_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class WorksPage extends StatelessWidget {
@@ -56,11 +58,18 @@ class WorksPage extends StatelessWidget {
           ),
           SizedBox(height: 20.h),
 
-          //* categories
-          WorksCategoriesWidget(),
+          BlocProvider(
+            create: (context) => WorksCategoriesCubit(),
+            child: Column(
+              children: [
+                //* categories
+                WorksCategoriesWidget(),
 
-          //* works list
-          WorksList(),
+                //* works list
+                WorksList(),
+              ],
+            ),
+          ),
         ],
       ),
     );

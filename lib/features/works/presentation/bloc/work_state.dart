@@ -20,10 +20,10 @@ final class WorkError extends WorkState {
   List<Object> get props => [message];
 }
 
-final class WorkLoaded extends WorkState {
+final class WorkSuccess extends WorkState {
   final List<WorkEntity> data;
 
-  const WorkLoaded({required this.data});
+  const WorkSuccess({required this.data});
 
   @override
   List<Object> get props => [data];

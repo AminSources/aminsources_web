@@ -34,7 +34,6 @@ class WorksRepositoryImpl extends WorksRepository {
           data.add(WorkModel.fromJson(work));
         }
 
-        print(data);
         //? return data
         return DataSuccess(data);
       }
