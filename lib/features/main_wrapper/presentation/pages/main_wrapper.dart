@@ -1,14 +1,17 @@
 import 'dart:ui';
 
 import 'package:aminsources_web/core/constants/colors.dart';
+import 'package:aminsources_web/core/params/no_params.dart';
 import 'package:aminsources_web/features/about/presentation/pages/about_page.dart';
 import 'package:aminsources_web/features/contact/presentation/pages/contact_page.dart';
 import 'package:aminsources_web/features/home/presentation/pages/home_page.dart';
 import 'package:aminsources_web/features/main_wrapper/presentation/pages/footer.dart';
 import 'package:aminsources_web/features/main_wrapper/presentation/widgets/app_bar_widget.dart';
 import 'package:aminsources_web/features/main_wrapper/presentation/widgets/drawer_widget.dart';
+import 'package:aminsources_web/features/works/presentation/bloc/work_bloc.dart';
 import 'package:aminsources_web/features/works/presentation/pages/works_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainWrapper extends StatefulWidget {
@@ -20,6 +23,13 @@ class MainWrapper extends StatefulWidget {
 
 class _MainWrapperState extends State<MainWrapper> {
   final scrollController = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+
+    context.read<WorkBloc>().add(LoadWorkData(params: NoParams()));
+  }
 
   @override
   Widget build(BuildContext context) {

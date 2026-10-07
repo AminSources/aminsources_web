@@ -1,10 +1,17 @@
 import 'package:aminsources_web/core/theme/app_theme.dart';
 import 'package:aminsources_web/features/main_wrapper/presentation/pages/main_wrapper.dart';
+import 'package:aminsources_web/features/works/presentation/bloc/work_bloc.dart';
+import 'package:aminsources_web/locator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(const MyApp());
+  //? init locator
+  setupLocator();
+
+  //? run app
+  runApp(BlocProvider(create: (_) => sl<WorkBloc>(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
