@@ -1,7 +1,7 @@
 import 'package:aminsources_web/core/constants/colors.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/neon_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LogoWidget extends StatelessWidget {
@@ -12,15 +12,7 @@ class LogoWidget extends StatelessWidget {
     return Row(
       children: [
         //* logo icon
-        Icon(
-          LucideIcons.code,
-          color: cyanColor,
-          size: 20.sp,
-          shadows: [
-            BoxShadow(color: cyanColor, blurRadius: 30.r, spreadRadius: 1.r),
-            BoxShadow(color: cyanColor, blurRadius: 30.r, spreadRadius: 1.r),
-          ],
-        ),
+        NeonIcon(imagePath: "lib/assets/images/code.svg"),
 
         SizedBox(width: 10.w),
 

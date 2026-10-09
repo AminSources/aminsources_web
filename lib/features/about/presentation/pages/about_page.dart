@@ -3,8 +3,8 @@ import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/label_widget.dart';
 import 'package:aminsources_web/core/widgets/page_widget.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/neon_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AboutPage extends StatelessWidget {
@@ -151,21 +151,13 @@ class AboutPage extends StatelessWidget {
                         border: Border.all(color: cyanColor),
                       ),
                       child: Center(
-                        child: Icon(
-                          [
-                            LucideIcons.smartphone,
-                            LucideIcons.monitor,
-                            LucideIcons.globe_code,
-                            LucideIcons.paintbrush_vertical,
+                        child: NeonIcon(
+                          imagePath: [
+                            "lib/assets/images/smartphone.svg",
+                            "lib/assets/images/monitor.svg",
+                            "lib/assets/images/globe-code.svg",
+                            "lib/assets/images/paintbrush-vertical.svg",
                           ][index],
-                          color: cyanColor,
-                          shadows: [
-                            Shadow(
-                              color: cyanColor.withValues(alpha: 0.5),
-                              blurRadius: 20.r,
-                              offset: Offset(-5, -5),
-                            ),
-                          ],
                         ),
                       ),
                     ),

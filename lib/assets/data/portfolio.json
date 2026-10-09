@@ -1,0 +1,24 @@
+{
+    "portfolio" : [
+        {
+            "name" : "Hamsafar App",
+            "description" : "A trip coordination and management application for small group trips",
+            "category" : "mobile",
+            "used_technologies" : [
+                "Mobile", "Flutter", "Dart", "Supabase"
+            ],
+            "github_url" : "https://github.com/AminSources/hamsafar",
+            "image_url" : "lib/assets/portfolio/hamsafar_title_picture.webp"
+        },
+        {
+            "name" : "Portfolio Web",
+            "description" : "An responsive personal web with neon-blur effects and modern UI/UX design",
+            "category" : "web",
+            "used_technologies" : [
+                "Web", "Flutter", "Dart"
+            ],
+            "github_url" : "https://github.com/AminSources/aminsources_web",
+            "image_url" : "lib/assets/portfolio/aminsources_web_title_picture.webp"
+        }
+    ]
+}

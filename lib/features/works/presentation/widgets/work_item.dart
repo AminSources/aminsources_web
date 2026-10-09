@@ -48,7 +48,7 @@ class WorkItem extends StatelessWidget {
             height: 150.h,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage(imagePath),
+                image: AssetImage(imagePath),
                 fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.only(

@@ -1,4 +1,4 @@
-import 'package:aminsources_web/features/works/data/data_source/remote/works_api_provider.dart';
+import 'package:aminsources_web/features/works/data/data_source/local/works_api_provider.dart';
 import 'package:aminsources_web/features/works/data/repositories/works_repository_impl.dart';
 import 'package:aminsources_web/features/works/domain/repositories/works_repository.dart';
 import 'package:aminsources_web/features/works/domain/usecases/get_works_usecase.dart';

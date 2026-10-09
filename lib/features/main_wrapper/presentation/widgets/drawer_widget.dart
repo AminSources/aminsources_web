@@ -6,10 +6,9 @@ import 'package:aminsources_web/core/extensions/scroll_extension.dart';
 import 'package:aminsources_web/core/keys/navigation_keys.dart';
 import 'package:aminsources_web/core/widgets/txt.dart';
 import 'package:aminsources_web/features/main_wrapper/presentation/widgets/logo_widget.dart';
+import 'package:aminsources_web/features/main_wrapper/presentation/widgets/neon_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -104,26 +103,13 @@ class DrawerWidget extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
 
-                              Icon(
-                                [
-                                  LucideIcons.house,
-                                  LucideIcons.user_round,
-                                  LucideIcons.briefcase,
-                                  LucideIcons.phone_call,
+                              NeonIcon(
+                                imagePath: [
+                                  "lib/assets/images/house.svg",
+                                  "lib/assets/images/user-round.svg",
+                                  "lib/assets/images/briefcase-business.svg",
+                                  "lib/assets/images/headset.svg",
                                 ][index],
-                                size: 18.sp,
-                                shadows: [
-                                  BoxShadow(
-                                    color: cyanColor,
-                                    blurRadius: 30.r,
-                                    spreadRadius: 1.r,
-                                  ),
-                                  BoxShadow(
-                                    color: cyanColor,
-                                    blurRadius: 30.r,
-                                    spreadRadius: 1.r,
-                                  ),
-                                ],
                               ),
                             ],
                           ),
@@ -188,35 +174,13 @@ class DrawerWidget extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
 
-                              Stack(
-                                children: [
-                                  ImageFiltered(
-                                    imageFilter: ImageFilter.blur(
-                                      sigmaX: 10,
-                                      sigmaY: 10,
-                                    ),
-                                    child: CircleAvatar(
-                                      radius: 8.r,
-                                      backgroundColor: cyanColor,
-                                    ),
-                                  ),
-
-                                  SvgPicture.asset(
-                                    [
-                                      "lib/assets/images/mail.svg",
-                                      "lib/assets/images/telegram.svg",
-                                      "lib/assets/images/instagram.svg",
-                                      "lib/assets/images/github.svg",
-                                    ][index],
-                                    width: 18.w,
-                                    height: 18.h,
-                                    fit: BoxFit.cover,
-                                    colorFilter: ColorFilter.mode(
-                                      cyanColor,
-                                      BlendMode.srcIn,
-                                    ),
-                                  ),
-                                ],
+                              NeonIcon(
+                                imagePath: [
+                                  "lib/assets/images/mail.svg",
+                                  "lib/assets/images/telegram.svg",
+                                  "lib/assets/images/instagram.svg",
+                                  "lib/assets/images/github.svg",
+                                ][index],
                               ),
                             ],
                           ),
